@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Message = require('./models/message');
+const Tutorial = require('./models/tutorial');
 const nodemailerCtrl = require('./nodemailer_controller');
 module.exports = {
     contactUser(req, res) {
@@ -16,6 +17,12 @@ module.exports = {
         });
         nodemailerCtrl.sendContactEmail(name, email, subject, message);
         res.status(200).json({message: "Message Sent!"});
+    },
+    readTutorials(req, res) {
+        Tutorial.find({}).exec((err, tutorials) => {
+            if(err) console.log('Get Tutorials Error----------', err);
+            res.status(200).json({tutorials});
+        })
     },
     adminGetEmails(req, res) {
         Message.find({}).exec((err, data) => {

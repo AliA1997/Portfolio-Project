@@ -16,6 +16,7 @@ mongoose.connect(process.env.CONNECTION_STRING, {useNewUrlParser: true},
 
 app.use(bodyParser.json());
 
+app.get('/api/tutorials', ctrl.readTutorials);
 app.post('/api/contact', ctrl.contactUser);
 
 
