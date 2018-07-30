@@ -1,0 +1,75 @@
+.contact-form {
+    display: grid;
+    grid-template-rows: 15% 15% 15% 55%;
+    grid-template-columns: 15% 70% 15%;
+    padding: 2.5%;
+}
+.contact-form > * {
+    display: grid;
+    grid-column: 2/2;
+    width: 100%;
+    grid-template-rows: 30% 70%;
+    height: 100%;
+    font-size: 1.1em;
+    margin: 2.5%;
+}
+.contact-form > * > .input-label {
+    grid-row: 1/1;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.contact-form > *:first-child {
+    grid-row: 1/1;
+    width: 100%;
+}
+
+.contact-form > *:first-child > input {
+    background: lightgray;
+    height: 50%;
+    width: 100%;
+}
+.contact-form > *:first-child > input:focus {
+    background: #fff;
+}
+.contact-form > *:nth-child(2) > input {
+    background: lightgray;
+    height: 50%;
+    width: 100%;
+}
+.contact-form > *:nth-child(2) > input:focus {
+    background: #fff;
+}
+.contact-form > *:nth-child(2) {
+    grid-row: 2/2;
+}
+.contact-form > *:nth-child(3) {
+    grid-row: 3/3;
+}
+.contact-form > *:nth-child(3) > input {
+    background: lightgray;
+    height: 50%;
+    width: 100%;
+}
+.contact-form > *:nth-child(3) > input:focus {
+    background: #fff;
+}
+.textarea-div {
+    grid-row: 4/4;
+    height: 15em !important;
+    width: 100%;
+}
+.textarea-div:first-child {
+    grid-row: 1/1;
+}
+.textarea-div > textarea {
+    height: 100%;
+    background: lightgray;
+    grid-row: 2/2;
+    font-size: 1.1em;
+    overflow: auto;
+}
+.textarea-div > textarea:focus {
+    background: white;
+    width: 100%;
+}

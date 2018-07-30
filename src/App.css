@@ -1,0 +1,23 @@
+.app {
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn {
+  height: 3em;
+  font-size: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700
+}
+.btn:hover {
+  animation-name: adjustFontSize;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes adjustFontSize {
+  0% {font-size: 1.5em; color: red};
+  20% {font-size: 1.4em; color: orange};
+  40% {font-size: 1.3em; color: yellow};
+  60% {font-size: 1.2em; color: yellowgreen};
+  80% {font-size: 1.1em; color: green};
+  100% {font-size: 1em; color: darkcyan};
+}

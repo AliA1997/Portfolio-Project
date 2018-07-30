@@ -1,0 +1,29 @@
+.desktop-navbar-div {
+    display: none;
+}
+@keyframes changeColorNavbar {
+    0% { background: rgb(180, 3, 3)}
+    10% { background: rgb(245, 100, 36)}
+    20% { background: rgb(245, 150, 36)}
+    30% { background: rgb(100, 200, 100)}
+    40% { background: rgb(125, 250, 200)}
+    50% { background: rgb(10, 100, 100)}
+    60% { background: rgb(20, 10, 200)}
+    70% { background: rgb(100, 10, 250)}
+    80% { background: rgb(200, 100, 250)}
+    90% { background: rgb(100, 80, 250)}
+    100% { background: rgb(180, 30, 10)}
+}
+@keyframes changeColorNavbarText {
+    0% { color: rgb(180, 3, 3), border 2px solid rgb(180, 3, 3)}
+    10% { color: rgb(245, 100, 36), border 2px solid rgb(245, 100, 36)}
+    20% { color: rgb(245, 150, 36), border 2px solid rgb(245, 150, 36)}
+    30% { color: rgb(100, 200, 100), border 2px solid rgb(100, 200, 100)}
+    40% { color: rgb(125, 250, 200), border 2px solid rgb(125, 250, 200)}
+    50% { color: rgb(10, 100, 100), border 2px solid  rgb(10, 100, 100)}
+    60% { color: rgb(20, 10, 200), border 2px solid rgb(20, 10, 200)}
+    70% { color: rgb(100, 10, 250), border 2px solid rgb(100, 10, 250)}
+    80% { color: rgb(200, 100, 250), border 2px solid rgb(200, 100, 250)}
+    90% { color: rgb(100, 80, 250), border 2px solid rgb(100, 80, 250)}
+    100% { color: rgb(180, 30, 10), border 2px solid  rgb(180, 30, 10)}
+}
